@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title> Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calendar">
+
+
+    <div class="header">
+
+      <div class="input-container">
+        <label for="day">
+          <h4>DAY</h4>
+        </label>
+        <input class="input" type="number" id="day" name="day" placeholder="DD">
+        <span id="day-alert"></span>
+      </div>
+
+      <div class="input-container">
+        <label for="month">
+          <h4>MONTH</h4>
+        </label>
+        <input class="input" type="text" id="month" name="month" placeholder="MM">
+        <span id="month-alert"></span>
+      </div>
+
+      <div class="input-container">
+        <label for="year">
+          <h4>YEAR</h4>
+        </label>
+        <input class="input" type="text" id="year" name="year" placeholder="YYYY">
+        <span id="year-alert"></span>
+      </div>
+
+    </div>
+
+
+
+    <div class="division-desktop">
+      <hr>
+      <button class="btn-desktop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <div class="division-mobile">
+      <hr>
+      <button class="btn-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32.2" height="30.8" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="1.4">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+      <hr>
+    </div>
+
+
+
+    <div class="result">
+
+      <div class="result-container">
+        <h1><span class="years-result lines">- -</span> years</h1>
+      </div>
+
+      <div class="result-container">
+        <h1><span class="months-result lines">- -</span> months</h1>
+      </div>
+
+      <div class="result-container">
+        <h1><span class="days-result lines">- -</span> days</h1>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
